@@ -1,0 +1,416 @@
+/* ScannerAdvanced.css - Ultra Modern Version */
+
+:root {
+  /* Fresh Color Palette */
+  --electric-blue: #00f5ff;
+  --violet-pulse: #b270f0;
+  --neon-coral: #ac82f1;
+  --cyber-lime: #00ff9d;
+  --golden-sun: #ffb347;
+  --error-red: #ff3a3a;
+  --deep-space: #0f0f1f;
+  --space-gray: #1a1a2e;
+  --panel-dark: rgba(20, 20, 40, 0.95);
+  --grid-line: rgba(0, 245, 255, 0.2);
+  --text-bright: #ffffff;
+  --text-dim: rgba(255, 255, 255, 0.8);
+  
+  /* 3D Effects */
+  --light-source: 60deg 90% 60%;
+}
+
+/* Base Container with Advanced Effects */
+.scanner-container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: 
+    radial-gradient(circle at 20% 30%, var(--deep-space) 0%, #000000 100%),
+    url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h80v80H0z' fill='none'/%3E%3Cpath d='M40 40h1v1h-1zM20 20h1v1h-1zM60 20h1v1h-1zM20 60h1v1h-1zM60 60h1v1h-1z' fill='%2300f5ff' opacity='0.15'/%3E%3C/svg%3E");
+  position: relative;
+  overflow: hidden;
+  perspective: 1200px;
+}
+
+/* Dynamic Grid Animation */
+.scanner-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: gridScroll 60s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes gridScroll {
+  0% { background-position: 0 0; }
+  100% { background-position: 1500px 1500px; }
+}
+
+/* Particle System */
+.scanner-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 30% 70%, rgba(0, 245, 255, 0.08) 0%, transparent 25%),
+    radial-gradient(circle at 70% 30%, rgba(138, 43, 226, 0.08) 0%, transparent 25%);
+  animation: particleFloat 40s infinite alternate ease-in-out;
+  z-index: 0;
+}
+
+/* Main Panel with Glassmorphism */
+.scanner-panel {
+  width: min(90%, 1400px);
+  background: var(--panel-dark);
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  border-radius: 24px;
+  border: 1px solid rgba(0, 245, 255, 0.25);
+  box-shadow: 
+    0 0 30px rgba(0, 245, 255, 0.15),
+    inset 0 0 40px rgba(0, 245, 255, 0.1),
+    0 15px 60px rgba(0, 0, 0, 0.6);
+  padding: 48px;
+  position: relative;
+  z-index: 1;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scanner-panel:hover {
+  transform: translateY(-8px) rotateX(2deg) rotateY(2deg);
+}
+
+/* Holographic Border Effect */
+.scanner-panel::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 27px;
+  background: linear-gradient(
+    135deg,
+    var(--electric-blue),
+    var(--violet-pulse),
+    var(--neon-coral),
+    var(--electric-blue)
+  );
+  background-size: 400% 400%;
+  z-index: -1;
+  animation: gradientFlow 10s ease infinite;
+  filter: blur(10px);
+  opacity: 0.8;
+}
+
+/* Animated Corner Brackets */
+.scanner-panel::after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 3px solid var(--electric-blue);
+  animation: pulse 4s infinite ease-in-out;
+}
+
+.scanner-panel::after {
+  top: 15px;
+  left: 15px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.corner-br {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 28px;
+  height: 28px;
+  border: 3px solid var(--electric-blue);
+  border-left: none;
+  border-top: none;
+  animation: pulse 4s infinite ease-in-out 0.5s;
+}
+
+/* Futuristic Typography */
+.scanner-title {
+  color: var(--electric-blue);
+  font-family: 'Orbitron', 'Rajdhani', sans-serif;
+  font-weight: 700;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  text-shadow: 
+    0 0 15px rgba(0, 245, 255, 0.7),
+    0 0 30px rgba(0, 245, 255, 0.3);
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 48px !important;
+  font-size: 2.8rem !important;
+}
+
+.scanner-title::before {
+  content: '>>>';
+  position: absolute;
+  left: 0;
+  color: var(--neon-coral);
+  animation: blink 1.2s infinite steps(1);
+}
+
+/* Advanced Button Design */
+.holographic-btn {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid var(--electric-blue);
+  color: var(--text-bright);
+  padding: 16px 36px;
+  border-radius: 8px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 
+    0 0 20px rgba(0, 245, 255, 0.3),
+    inset 0 0 15px rgba(0, 245, 255, 0.15);
+  z-index: 1;
+}
+
+.holographic-btn::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: linear-gradient(
+    to bottom right,
+    transparent,
+    rgba(0, 245, 255, 0.15),
+    transparent
+  );
+  transform: rotate(35deg);
+  animation: shine 5s infinite;
+}
+
+.holographic-btn:hover {
+  background: rgba(0, 245, 255, 0.2);
+  box-shadow: 
+    0 0 35px rgba(0, 245, 255, 0.5),
+    inset 0 0 20px rgba(0, 245, 255, 0.25);
+  transform: translateY(-4px);
+  border-color: var(--cyber-lime);
+}
+
+.holographic-btn:active {
+  transform: translateY(2px);
+}
+
+/* Preview Container with Scan Lines */
+.preview-container {
+  border: 2px dashed rgba(0, 245, 255, 0.4);
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 
+    inset 0 0 20px rgba(0, 245, 255, 0.1),
+    0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.preview-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 245, 255, 0.08),
+    transparent
+  );
+  animation: scanLine 3.5s infinite linear;
+  z-index: 1;
+}
+
+.preview-image {
+  position: relative;
+  z-index: 2;
+  background: #000;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.preview-container:hover .preview-image {
+  filter: brightness(1.15) contrast(1.15);
+  transform: scale(1.01);
+}
+
+/* Results Terminal with Data Glow */
+.result-card-3d {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 245, 255, 0.4);
+  border-radius: 16px;
+  font-family: 'Courier New', monospace;
+  color: var(--cyber-lime);
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+  box-shadow: 
+    inset 0 0 20px rgba(0, 245, 255, 0.1),
+    0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+.result-card-3d::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    var(--electric-blue), 
+    var(--neon-coral), 
+    transparent);
+  animation: scanBorder 5s linear infinite;
+  filter: blur(1px);
+}
+
+.result-content {
+  padding: 28px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 0 8px rgba(0, 255, 157, 0.5);
+  line-height: 1.8;
+}
+
+.result-content::before {
+  content: 'SCAN_RESULTS>';
+  position: absolute;
+  top: -14px;
+  left: 20px;
+  background: var(--deep-space);
+  padding: 0 12px;
+  color: var(--neon-coral);
+  font-size: 1rem;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(255, 77, 109, 0.5);
+}
+
+/* Empty State with Holographic Effect */
+.empty-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 2px dashed rgba(0, 245, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.empty-state::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(45deg, transparent 48%, rgba(0, 245, 255, 0.1) 50%, transparent 52%),
+    linear-gradient(-45deg, transparent 48%, rgba(0, 245, 255, 0.1) 50%, transparent 52%);
+  background-size: 30px 30px;
+  animation: hologramPulse 5s infinite;
+}
+
+.empty-state-text {
+  color: var(--text-dim);
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+  background: rgba(15, 15, 30, 0.7);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Animations */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes particleFloat {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(30px, 30px) scale(1.05); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes scanLine {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+@keyframes scanBorder {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes shine {
+  0% { left: -100%; opacity: 0; }
+  20% { opacity: 0.7; }
+  100% { left: 100%; opacity: 0; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.7; box-shadow: 0 0 10px var(--electric-blue); }
+  50% { opacity: 1; box-shadow: 0 0 20px var(--electric-blue); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes hologramPulse {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .scanner-panel {
+    width: 95%;
+    padding: 32px;
+  }
+  
+  .scanner-title {
+    font-size: 2rem !important;
+    letter-spacing: 3px;
+    margin-bottom: 32px !important;
+  }
+  
+  .holographic-btn {
+    padding: 14px 28px;
+    font-size: 0.9rem;
+  }
+  
+  .result-content {
+    padding: 20px;
+  }
+}

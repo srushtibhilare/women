@@ -1,0 +1,343 @@
+{
+  "acts": [
+    {
+      "Year": 1929,
+      "Act/Law": "Child Marriage Restraint Act (Sarda Act)",
+      "Key Provisions": "Set minimum marriage age (14 for girls, 18 for boys).",
+      "Problem": "Widespread child marriages leading to health risks, education deprivation, and exploitation of minors.",
+      "Explanation": "Enacted to prevent early marriages that negatively impacted girls' physical/mental development and perpetuated gender inequality.",
+      "Category": "Marriage",
+      "Status": "Amended in 1978"
+    },
+    {
+      "Year": 1937,
+      "Act/Law": "Hindu Women's Right to Property Act",
+      "Key Provisions": "Granted widows limited inheritance rights.",
+      "Problem": "Hindu widows were being disinherited from family property despite financial dependence.",
+      "Explanation": "Provided partial economic security to widows by allowing inheritance of husband's share in joint family property.",
+      "Category": "Property",
+      "Status": "Repealed in 1956"
+    },
+    {
+      "Year": 1955,
+      "Act/Law": "Hindu Marriage Act",
+      "Key Provisions": "Legalized divorce, banned polygamy, and regulated Hindu marriages.",
+      "Problem": "Unregulated Hindu marriages with no divorce provisions and rampant polygamy practices.",
+      "Explanation": "Codified Hindu marriage laws to ensure monogamy, provide exit options via divorce, and standardize marriage conditions.",
+      "Category": "Marriage",
+      "Status": "Active"
+    },
+    {
+      "Year": 1956,
+      "Act/Law": "Hindu Succession Act",
+      "Key Provisions": "Granted daughters equal inheritance rights in paternal property.",
+      "Problem": "Gender discrimination in property inheritance where daughters were excluded from ancestral property.",
+      "Explanation": "Established equal succession rights for daughters in father's self-acquired property (ancestral property rights came via 2005 amendment).",
+      "Category": "Property",
+      "Status": "Amended in 2005"
+    },
+    {
+      "Year": 1961,
+      "Act/Law": "Dowry Prohibition Act",
+      "Key Provisions": "Criminalized giving/taking dowry (penalty: 5 years + fine).",
+      "Problem": "Dowry-related harassment, domestic violence, and bride burnings becoming rampant.",
+      "Explanation": "Aimed to eliminate the dowry system that commodified marriages and endangered women's lives.",
+      "Category": "Anti-Dowry",
+      "Status": "Active"
+    },
+    {
+      "Year": 1972,
+      "Act/Law": "Medical Termination of Pregnancy (MTP) Act",
+      "Key Provisions": "Legalized abortion under specific conditions.",
+      "Problem": "Unsafe illegal abortions causing maternal mortality and health complications.",
+      "Explanation": "Allowed safe abortions up to 20 weeks (later 24 weeks) to protect women's reproductive health and autonomy.",
+      "Category": "Health",
+      "Status": "Amended in 2021"
+    },
+    {
+      "Year": 1986,
+      "Act/Law": "Indecent Representation of Women Act",
+      "Key Provisions": "Banned derogatory depictions of women in ads/media.",
+      "Problem": "Objectification of women in media reinforcing gender stereotypes and normalizing harassment.",
+      "Explanation": "Prohibited sexist portrayals that undermined women's dignity in advertisements/publications.",
+      "Category": "Dignity",
+      "Status": "Amended in 2012"
+    },
+    {
+      "Year": 1994,
+      "Act/Law": "Pre-Conception & Pre-Natal Diagnostics Act (PC-PNDT)",
+      "Key Provisions": "Banned sex-determination tests to prevent female foeticide.",
+      "Problem": "Alarming decline in female sex ratio due to sex-selective abortions after prenatal testing.",
+      "Explanation": "Outlawed technologies enabling gender-based foeticide to correct skewed sex ratios and protect female foetuses.",
+      "Category": "Health",
+      "Status": "Active"
+    },
+    {
+      "Year": 2005,
+      "Act/Law": "Protection of Women from Domestic Violence Act (PWDVA)",
+      "Key Provisions": "Civil remedies (protection orders, residence rights) for abuse survivors.",
+      "Problem": "Lack of legal recourse for domestic violence victims facing physical/emotional/economic abuse.",
+      "Explanation": "Provided immediate protection through restraining orders and guaranteed shared household rights without requiring lengthy divorce proceedings.",
+      "Category": "Domestic Safety",
+      "Status": "Active"
+    },
+    {
+      "Year": 2005,
+      "Act/Law": "Hindu Succession Amendment Act",
+      "Key Provisions": "Granted daughters equal rights in ancestral property (applied retroactively).",
+      "Problem": "Persisting gender gap in ancestral property rights despite 1956 Act.",
+      "Explanation": "Closed legal loopholes by giving daughters equal coparcenary rights in joint family property from birth.",
+      "Category": "Property",
+      "Status": "Active"
+    },
+    {
+      "Year": 2006,
+      "Act/Law": "Prohibition of Child Marriage Act",
+      "Key Provisions": "Replaced the 1929 Act; made child marriage voidable.",
+      "Problem": "Weak enforcement of child marriage bans with high prevalence in rural areas.",
+      "Explanation": "Strengthened penalties and allowed annulment of child marriages while protecting victims' rights.",
+      "Category": "Marriage",
+      "Status": "Active"
+    },
+    {
+      "Year": 2013,
+      "Act/Law": "Criminal Law Amendment Act (Nirbhaya Act)",
+      "Key Provisions": "Stricter rape laws (death penalty for repeat offenders), criminalized acid attacks, stalking.",
+      "Problem": "Public outrage after 2012 Delhi gang rape case exposing gaps in sexual violence laws.",
+      "Explanation": "Expanded definition of rape, introduced fast-track courts, and recognized newer forms of gender violence like stalking.",
+      "Category": "Sexual Violence",
+      "Status": "Active"
+    },
+    {
+      "Year": 2013,
+      "Act/Law": "Sexual Harassment at Workplace (POSH) Act",
+      "Key Provisions": "Mandated Internal Complaints Committees (ICCs) in offices.",
+      "Problem": "Absence of grievance mechanisms for workplace sexual harassment cases.",
+      "Explanation": "Implemented Vishakha Guidelines by making ICCs compulsory in all organizations with 10+ employees.",
+      "Category": "Workplace",
+      "Status": "Active"
+    },
+    {
+      "Year": 2017,
+      "Act/Law": "Maternity Benefit Amendment Act",
+      "Key Provisions": "Extended paid maternity leave from 12 to 26 weeks.",
+      "Problem": "Inadequate maternity benefits forcing women to quit jobs or risk newborn health.",
+      "Explanation": "Enhanced leave duration to support breastfeeding and postpartum recovery, applicable to all establishments with 10+ employees.",
+      "Category": "Workplace",
+      "Status": "Active"
+    },
+    {
+      "Year": 2019,
+      "Act/Law": "Muslim Women (Protection of Rights on Marriage) Act",
+      "Key Provisions": "Criminalized instant triple talaq (3-year jail for offenders).",
+      "Problem": "Abrupt triple talaq pronouncements leaving women destitute without due process.",
+      "Explanation": "Nullified instant divorce practice while preserving other valid forms of talaq with procedural safeguards.",
+      "Category": "Marriage",
+      "Status": "Active"
+    },
+    {
+      "Year": 2021,
+      "Act/Law": "Medical Termination of Pregnancy (Amendment) Act",
+      "Key Provisions": "Increased abortion limit to 24 weeks for special cases (rape, disabilities).",
+      "Problem": "Delayed abortion access for vulnerable groups due to restrictive 20-week limit.",
+      "Explanation": "Extended gestational period for rape survivors, minors, and foetal abnormality cases with state-level medical board approvals.",
+      "Category": "Health",
+      "Status": "Active"
+    },
+    {
+      "Year": 2023,
+      "Act/Law": "Bharatiya Nyaya Sanhita (BNS)*",
+      "Key Provisions": "Proposed gender-neutral adultery laws, life/death penalty for gang rape.",
+      "Problem": "Outdated IPC provisions failing to address modern sexual crimes effectively.",
+      "Explanation": "Overhauls colonial-era laws by recognizing marital rape (partially), cyber crimes against women, and enhanced rape punishments.",
+      "Category": "Criminal Justice",
+      "Status": "Pending (2025)"
+    },
+    {
+      "Year": 2024,
+      "Act/Law": "Women's Reservation Bill (Nari Shakti Vandan Adhiniyam)",
+      "Key Provisions": "33% quota for women in Lok Sabha/state assemblies.",
+      "Problem": "Persistent underrepresentation of women in legislatures (<15% MPs).",
+      "Explanation": "Seeks to mandate one-third seats for women after delimitation exercise (likely by 2029), excluding SC/ST reserved seats.",
+      "Category": "Political Representation",
+      "Status": "Passed (2023, implementation pending)"
+    },
+    {
+      "Year": 2024,
+      "Act/Law": "Digital Safety Bill",
+      "Key Provisions": "Criminalizes deepfake abuse, cyberstalking, and non-consensual sharing of intimate images.",
+      "Problem": "Rise of AI-generated explicit content and online harassment targeting women.",
+      "Explanation": "Creates dedicated cyber cells to tackle revenge porn, morphing, and other digital gender crimes with 3-5 year imprisonment.",
+      "Category": "Cyber Safety",
+      "Status": "Draft Stage"
+    },
+    {
+      "Year": 2025,
+      "Act/Law": "Maternity Benefit (Amendment) Bill",
+      "Key Provisions": "Proposed extension of paid maternity leave to 32 weeks for private sector employees.",
+      "Problem": "Disparity between government (26 weeks) and private sector (12 weeks) maternity benefits.",
+      "Explanation": "Aims to standardize extended leave across sectors while addressing employer concerns through partial wage reimbursement schemes.",
+      "Category": "Workplace",
+      "Status": "Under Discussion"
+    },
+    {
+      "Year": 2025,
+      "Act/Law": "Surrogacy Regulation (Amendment) Rules",
+      "Key Provisions": "Stricter regulations to protect surrogate mothers from exploitation.",
+      "Problem": "Commercial surrogacy practices leading to health risks and financial coercion of poor women.",
+      "Explanation": "Restricts surrogacy to altruistic arrangements with medical/legal safeguards for surrogates and commissioning parents.",
+      "Category": "Health/Reproductive Rights",
+      "Status": "Draft Stage"
+    }
+  ],
+  "categories": {
+    "domesticViolence": {
+      "keywords": [
+        "beats me", "hit me", "abuse", "abusing", "violent", 
+        "slap", "punched", "kicked", "beating", "harass",
+        "physical abuse", "emotional abuse", "mental torture",
+        "threaten", "threatening", "force me", "hurts me",
+        "scared of my husband", "afraid at home", "not safe at home",
+        "marital rape", "forced sex", "financial control",
+        "locked in", "not allowed to go out", "my husband controls me"
+      ],
+      "helpline": "Women's Helpline: 1091 or 112 (Police SOS)",
+      "immediateSteps": [
+        "Call 112 if in immediate danger",
+        "Document injuries with photos",
+        "Inform trusted neighbors"
+      ],
+      "legalProcess": "File complaint under Protection of Women from Domestic Violence Act (2005) at local police station or through a Protection Officer"
+    },
+    "dowry": {
+      "keywords": [
+        "dowry", "dowry demand", "gifts demanded", "bride price",
+        "dowry harassment", "dowry death", "dowry case",
+        "demanding money", "demanding gifts", "dahej"
+      ],
+      "helpline": "Anti-Dowry Cell: 011-26942369 or NCW Helpline: 7827-170-170",
+      "immediateSteps": [
+        "Preserve all dowry demand evidence (messages, recordings)",
+        "Inform your parents",
+        "Contact anti-dowry cell"
+      ],
+      "legalProcess": "File FIR under Dowry Prohibition Act (1961) and Section 498A IPC at nearest police station"
+    },
+    "workplaceHarassment": {
+      "keywords": [
+        "workplace harassment", "office harassment", "boss harassing",
+        "colleague touching", "unwanted advances", "sexual comments",
+        "promotion for favors", "workplace abuse", "POSH"
+      ],
+      "helpline": "POSH Compliance Cell: 1800-111-555 or NCW Helpline",
+      "immediateSteps": [
+        "Document incidents with date/time/details",
+        "Report to Internal Complaints Committee (ICC)",
+        "Email complaint to preserve record"
+      ],
+      "legalProcess": "File complaint under POSH Act (2013) with your employer's ICC within 3 months of incident"
+    },
+    "sexualViolence": {
+      "keywords": [
+        "raped", "sexual assault", "molested", "touched without consent",
+        "forced sex", "gang rape", "acid attack", "stalk", "stalking",
+        "eve teasing", "Nirbhaya", "sexual violence"
+      ],
+      "helpline": "Nirbhaya Helpline: 112 or 181 (One Stop Centre)",
+      "immediateSteps": [
+        "Don't wash/shower to preserve evidence",
+        "Go to nearest hospital for medical examination",
+        "Call 112 immediately"
+      ],
+      "legalProcess": "File FIR under Criminal Law Amendment Act (2013) at women's police station or any police station (they cannot refuse)"
+    },
+    "propertyRights": {
+      "keywords": [
+        "property rights", "father property", "inheritance",
+        "brother took property", "denied property", "ancestral property",
+        "land rights", "house ownership", "property dispute"
+      ],
+      "helpline": "Legal Aid: 15100 (State Legal Services Authority)",
+      "immediateSteps": [
+        "Gather property documents",
+        "Make copies of ownership papers",
+        "Consult a property lawyer"
+      ],
+      "legalProcess": "File civil suit under Hindu Succession Act (2005 amendment) in district court or through legal aid services"
+    },
+    "marriage": {
+      "keywords": [
+        "child marriage", "forced marriage", "divorce",
+        "maintenance", "alimony", "triple talaq", "marital issues",
+        "husband left", "marriage registration", "bigamy"
+      ],
+      "helpline": "Family Counseling: 1098 (Childline) or 112 (Police)",
+      "subCategories": {
+        "childMarriage": {
+          "immediateSteps": [
+            "Contact Childline at 1098",
+            "Inform local women's protection officer",
+            "Seek help from school authorities"
+          ],
+          "legalProcess": "File complaint under Prohibition of Child Marriage Act (2006) at child welfare committee or police station"
+        },
+        "tripleTalaq": {
+          "immediateSteps": [
+            "Record the talaq pronouncement if possible",
+            "Contact local qazi/imam",
+            "Reach out to women's organizations"
+          ],
+          "legalProcess": "File police complaint under Muslim Women (Protection of Rights on Marriage) Act (2019) - punishable with 3 years jail"
+        },
+        "general": {
+          "immediateSteps": [
+            "Consult family lawyer",
+            "Contact marriage counselor if reconciliation desired",
+            "Secure important documents"
+          ],
+          "legalProcess": "Approach family court under relevant marriage acts (Hindu Marriage Act 1955, Special Marriage Act 1954, etc.)"
+        }
+      }
+    },
+    "health": {
+      "keywords": [
+        "abortion", "maternity leave", "pregnancy rights",
+        "female foeticide", "reproductive rights", "medical termination",
+        "surrogacy", "pregnancy benefits"
+      ],
+      "helpline": "Health Ministry Helpline: 104 or 102 (Ambulance)",
+      "subCategories": {
+        "abortion": {
+          "immediateSteps": [
+            "Visit registered medical practitioner",
+            "For minors/rape survivors, approach district medical board",
+            "Call 104 for guidance"
+          ],
+          "legalProcess": "Legal under MTP Act (2021 amendment) up to 24 weeks in special cases at approved facilities with doctor's approval"
+        },
+        "maternity": {
+          "immediateSteps": [
+            "Inform employer in writing",
+            "Gather employment proof",
+            "Consult HR department"
+          ],
+          "legalProcess": "Claim benefits under Maternity Benefit Act (2017 amendment) through employer or labor commissioner if denied"
+        }
+      }
+    },
+    "cyberCrime": {
+      "keywords": [
+        "cyber crime", "online harassment", "morphed photos",
+        "revenge porn", "deepfake", "sextortion", "cyber stalking",
+        "social media abuse"
+      ],
+      "helpline": "Cyber Crime Cell: 155260 or https://cybercrime.gov.in",
+      "immediateSteps": [
+        "Take screenshots of offensive content",
+        "Preserve device without deleting evidence",
+        "Avoid confronting perpetrator online"
+      ],
+      "legalProcess": "File complaint at cyber crime police station or online at https://cybercrime.gov.in under IT Act and relevant sections"
+    }
+  }
+}

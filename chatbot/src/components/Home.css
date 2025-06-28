@@ -1,0 +1,195 @@
+/* Base Container Styles */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #2a5d91 0%, #dbe3ec 100%);
+  padding: 2rem;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  animation: fadeIn 1.2s ease-in-out forwards;
+  backdrop-filter: saturate(180%) contrast(1.1);
+}
+
+/* Language Card Styles */
+.language-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 24px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+  padding: 3rem 2.5rem;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  animation: slideUp 1s ease-out forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.language-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.25);
+}
+
+/* Typography */
+.language-card h1 {
+  font-size: 2.2rem;
+  color: #1e1f29;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  letter-spacing: 0.5px;
+}
+
+.language-card p {
+  color: #5c677d;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Language Buttons */
+.language-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.language-btn {
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  background-size: 200% auto;
+  background-position: left center;
+  background-repeat: no-repeat;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.language-btn:hover {
+  transform: scale(1.05);
+  background-position: right center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.language-btn.marathi {
+  background-image: linear-gradient(to right, #d00000, #dc2f02);
+}
+
+.language-btn.english {
+  background-image: linear-gradient(to right, #3a86ff, #4361ee);
+}
+
+.language-btn.hindi {
+  background-image: linear-gradient(to right, #38b000, #70e000);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .language-card {
+    padding: 2rem;
+    border-radius: 16px;
+  }
+
+  .language-card h1 {
+    font-size: 1.7rem;
+  }
+
+  .language-btn {
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Image Background Wrapper */
+.intro-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.intro-wrapper img.intro-image {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh + 5px);
+  object-fit: cover;
+  filter: none;
+  opacity: 1;
+  z-index: -1;
+  animation: blurAfterDelay 3s ease-in-out 1s forwards;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Optional Heading */
+.intro-heading {
+  color: white;
+  font-size: 2.5rem;
+  z-index: 1;
+}
+
+
+
+@keyframes blurAfterDelay {
+  0% {
+    filter: none;
+    opacity: 1;
+  }
+  100% {
+    filter: blur(10px);
+    opacity: 1;
+  }
+}
+
+
+
+

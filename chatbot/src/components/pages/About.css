@@ -1,0 +1,157 @@
+/* Base Styles */
+body {
+  font-family: 'Noto Sans Devanagari', 'Arial Unicode MS', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Chatbot Container */
+.chatbot-container {
+  max-width: 500px;
+  margin: 20px auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+/* Chatbot Header */
+.chatbot-header {
+  background-color: #e91e63; /* Pink color for women's rights theme */
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Messages Area */
+.chatbot-messages {
+  height: 400px;
+  overflow-y: auto;
+  padding: 15px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Individual Messages */
+.message {
+  max-width: 80%;
+  padding: 10px 15px;
+  border-radius: 18px;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+/* Bot Messages */
+.message.bot {
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #e0e0e0;
+  align-self: flex-start;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* User Messages */
+.message.user {
+  background-color: #e91e63;
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 5px;
+}
+
+/* Input Area */
+.chatbot-input {
+  display: flex;
+  padding: 12px;
+  background-color: white;
+  border-top: 1px solid #eee;
+}
+
+.chatbot-input input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  outline: none;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.chatbot-input input:focus {
+  border-color: #e91e63;
+}
+
+.chatbot-input button {
+  margin-left: 10px;
+  padding: 0 20px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.chatbot-input button:hover {
+  background-color: #c2185b;
+}
+
+/* Scrollbar Styling */
+.chatbot-messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+  border-radius: 4px;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb:hover {
+  background: #bdbdbd;
+}
+
+/* Typography for Marathi Text */
+.message p {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .chatbot-container {
+    margin: 10px;
+    max-width: 100%;
+  }
+  
+  .chatbot-messages {
+    height: 60vh;
+  }
+  
+  .message {
+    max-width: 75%;
+  }
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.message {
+  animation: fadeIn 0.3s ease-out;
+}
